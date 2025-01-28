@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a7f3441a7c1d5be335bf4aec4eb6fff5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a7f3441a7c1d5be335bf4aec4eb6fff5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a7f3441a7c1d5be335bf4aec4eb6fff5 = L.map(
+                "map_a7f3441a7c1d5be335bf4aec4eb6fff5",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_099da02a7fef7cd9d8ea54d876265ae0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_099da02a7fef7cd9d8ea54d876265ae0.addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var marker_7301e1443a29dae5041b6a03e7a18c5a = L.marker(
+                [40.640863, -73.948745],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_a58bde77c2f713e2801a19590ea2efb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7301e1443a29dae5041b6a03e7a18c5a.setIcon(icon_a58bde77c2f713e2801a19590ea2efb3);
+        
+    
+        var popup_54b5b90febb49b5de4c590de7eef0732 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18dfba9a0788d058d387fd36191396ad = $(`<div id="html_18dfba9a0788d058d387fd36191396ad" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.64086, -73.94875)</div>`)[0];
+                popup_54b5b90febb49b5de4c590de7eef0732.setContent(html_18dfba9a0788d058d387fd36191396ad);
+            
+        
+
+        marker_7301e1443a29dae5041b6a03e7a18c5a.bindPopup(popup_54b5b90febb49b5de4c590de7eef0732)
+        ;
+
+        
+    
+    
+            var circle_7a1309d2bd40edf611d3ae456af2c9ef = L.circle(
+                [40.640863, -73.948745],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_478842c655ba639f013de35d151627af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2f74de6fd126de76abf1e20bdb581e3 = $(`<div id="html_e2f74de6fd126de76abf1e20bdb581e3" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_478842c655ba639f013de35d151627af.setContent(html_e2f74de6fd126de76abf1e20bdb581e3);
+            
+        
+
+        circle_7a1309d2bd40edf611d3ae456af2c9ef.bindPopup(popup_478842c655ba639f013de35d151627af)
+        ;
+
+        
+    
+    
+            var marker_496148537408f8e4d1bfb000f3da2c0f = L.marker(
+                [40.71072, -73.770411],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_915d0d504b6cc881c94a1d58b9b9a484 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_496148537408f8e4d1bfb000f3da2c0f.setIcon(icon_915d0d504b6cc881c94a1d58b9b9a484);
+        
+    
+        var popup_cbbed33ce98b37d173ffaf3c46c47e54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0092b36f79a6690d23bb6fc21e9a031d = $(`<div id="html_0092b36f79a6690d23bb6fc21e9a031d" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.71072, -73.77041)</div>`)[0];
+                popup_cbbed33ce98b37d173ffaf3c46c47e54.setContent(html_0092b36f79a6690d23bb6fc21e9a031d);
+            
+        
+
+        marker_496148537408f8e4d1bfb000f3da2c0f.bindPopup(popup_cbbed33ce98b37d173ffaf3c46c47e54)
+        ;
+
+        
+    
+    
+            var circle_885483131edecbc41fcb0b7ea13e98fb = L.circle(
+                [40.71072, -73.770411],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_fe44b0bc94ced0e8e34cde6bec40830b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f758b01f39cce49b73731e9ec671d99 = $(`<div id="html_1f758b01f39cce49b73731e9ec671d99" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_fe44b0bc94ced0e8e34cde6bec40830b.setContent(html_1f758b01f39cce49b73731e9ec671d99);
+            
+        
+
+        circle_885483131edecbc41fcb0b7ea13e98fb.bindPopup(popup_fe44b0bc94ced0e8e34cde6bec40830b)
+        ;
+
+        
+    
+    
+            var marker_96d7d90b96357800d9b84ab43bf223e6 = L.marker(
+                [40.700432, -73.90103],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_191cf31c9261ebaf652c8488df86d193 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_96d7d90b96357800d9b84ab43bf223e6.setIcon(icon_191cf31c9261ebaf652c8488df86d193);
+        
+    
+        var popup_e9547d8069900605f7d49c910ab1e950 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0132dd00a6517ec8fadb3bd041aac4d9 = $(`<div id="html_0132dd00a6517ec8fadb3bd041aac4d9" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.70043, -73.90103)</div>`)[0];
+                popup_e9547d8069900605f7d49c910ab1e950.setContent(html_0132dd00a6517ec8fadb3bd041aac4d9);
+            
+        
+
+        marker_96d7d90b96357800d9b84ab43bf223e6.bindPopup(popup_e9547d8069900605f7d49c910ab1e950)
+        ;
+
+        
+    
+    
+            var circle_0c607f90e88baa659833a86e43173e69 = L.circle(
+                [40.700432, -73.90103],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_48d274c73d708d18c8431f887211cc31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b35f39a655d3cbfaf1fe8e89c3c95936 = $(`<div id="html_b35f39a655d3cbfaf1fe8e89c3c95936" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_48d274c73d708d18c8431f887211cc31.setContent(html_b35f39a655d3cbfaf1fe8e89c3c95936);
+            
+        
+
+        circle_0c607f90e88baa659833a86e43173e69.bindPopup(popup_48d274c73d708d18c8431f887211cc31)
+        ;
+
+        
+    
+    
+            var marker_9f90f8bb59a152f493f9fe2c2dc5c163 = L.marker(
+                [40.70086, -73.893013],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_8e67ce22ef1020bfc721720e030ab807 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9f90f8bb59a152f493f9fe2c2dc5c163.setIcon(icon_8e67ce22ef1020bfc721720e030ab807);
+        
+    
+        var popup_c8fe73fa502f403c2ef5d10b11c27516 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_369a5f62bf71f170b856cf3d917791b6 = $(`<div id="html_369a5f62bf71f170b856cf3d917791b6" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.70086, -73.89301)</div>`)[0];
+                popup_c8fe73fa502f403c2ef5d10b11c27516.setContent(html_369a5f62bf71f170b856cf3d917791b6);
+            
+        
+
+        marker_9f90f8bb59a152f493f9fe2c2dc5c163.bindPopup(popup_c8fe73fa502f403c2ef5d10b11c27516)
+        ;
+
+        
+    
+    
+            var circle_90882d2f7706de74f12400ffc927d96e = L.circle(
+                [40.70086, -73.893013],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_27e904385621cb8c993f4bb2f4133cba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_349aade88df1da4069617743a0589f2a = $(`<div id="html_349aade88df1da4069617743a0589f2a" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_27e904385621cb8c993f4bb2f4133cba.setContent(html_349aade88df1da4069617743a0589f2a);
+            
+        
+
+        circle_90882d2f7706de74f12400ffc927d96e.bindPopup(popup_27e904385621cb8c993f4bb2f4133cba)
+        ;
+
+        
+    
+    
+            var marker_72c38c1ef3cd68f0d2abb125ac93258f = L.marker(
+                [40.721978, -73.904288],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_8b64548caea37e4cf44916be22c39ff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_72c38c1ef3cd68f0d2abb125ac93258f.setIcon(icon_8b64548caea37e4cf44916be22c39ff1);
+        
+    
+        var popup_e0260bb082b996c9be1d34d45f87b0ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e89514fad08b76d3407ad15c43418ac = $(`<div id="html_7e89514fad08b76d3407ad15c43418ac" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.72198, -73.90429)</div>`)[0];
+                popup_e0260bb082b996c9be1d34d45f87b0ff.setContent(html_7e89514fad08b76d3407ad15c43418ac);
+            
+        
+
+        marker_72c38c1ef3cd68f0d2abb125ac93258f.bindPopup(popup_e0260bb082b996c9be1d34d45f87b0ff)
+        ;
+
+        
+    
+    
+            var circle_5b95af24d93870907441c2754199041e = L.circle(
+                [40.721978, -73.904288],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_6171a80c8435d29ff122deb10ff132aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f7ccfd5ed4a34ab45c24022bb87f69e8 = $(`<div id="html_f7ccfd5ed4a34ab45c24022bb87f69e8" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_6171a80c8435d29ff122deb10ff132aa.setContent(html_f7ccfd5ed4a34ab45c24022bb87f69e8);
+            
+        
+
+        circle_5b95af24d93870907441c2754199041e.bindPopup(popup_6171a80c8435d29ff122deb10ff132aa)
+        ;
+
+        
+    
+    
+            var marker_daa52bb934d32b5476394812deab83ce = L.marker(
+                [40.714743, -73.90129],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_d26af815203dbf8ddd842c6e3eaed84a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_daa52bb934d32b5476394812deab83ce.setIcon(icon_d26af815203dbf8ddd842c6e3eaed84a);
+        
+    
+        var popup_3728603423bf385fe24b2554151a1fff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a5b9e155745a8bbf4a50da10d7f5966 = $(`<div id="html_0a5b9e155745a8bbf4a50da10d7f5966" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.71474, -73.90129)</div>`)[0];
+                popup_3728603423bf385fe24b2554151a1fff.setContent(html_0a5b9e155745a8bbf4a50da10d7f5966);
+            
+        
+
+        marker_daa52bb934d32b5476394812deab83ce.bindPopup(popup_3728603423bf385fe24b2554151a1fff)
+        ;
+
+        
+    
+    
+            var circle_47918cb1885470eb945e225d17a11682 = L.circle(
+                [40.714743, -73.90129],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_90f695518c93d89377dd409644d95cf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eed7bc0c470cc88a9f98149d35d20f1b = $(`<div id="html_eed7bc0c470cc88a9f98149d35d20f1b" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_90f695518c93d89377dd409644d95cf3.setContent(html_eed7bc0c470cc88a9f98149d35d20f1b);
+            
+        
+
+        circle_47918cb1885470eb945e225d17a11682.bindPopup(popup_90f695518c93d89377dd409644d95cf3)
+        ;
+
+        
+    
+    
+            var marker_9b2c8acafff23fcf7791f1e493c403e2 = L.marker(
+                [40.725773, -73.895777],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_e9fdf1c78eb709649964f5e1d00be7b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9b2c8acafff23fcf7791f1e493c403e2.setIcon(icon_e9fdf1c78eb709649964f5e1d00be7b6);
+        
+    
+        var popup_4b0b411ef4c1d5bdaef2dc5a3797e1b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b2e3c333643329bd19f1c26bf492d6c = $(`<div id="html_4b2e3c333643329bd19f1c26bf492d6c" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.72577, -73.89578)</div>`)[0];
+                popup_4b0b411ef4c1d5bdaef2dc5a3797e1b7.setContent(html_4b2e3c333643329bd19f1c26bf492d6c);
+            
+        
+
+        marker_9b2c8acafff23fcf7791f1e493c403e2.bindPopup(popup_4b0b411ef4c1d5bdaef2dc5a3797e1b7)
+        ;
+
+        
+    
+    
+            var circle_4bb1e03ead7dacad7e38e5306cf88e6f = L.circle(
+                [40.725773, -73.895777],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_363d137c51a8602514923ee277d6561b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c6da74fcb4105240b0710fdf9176634b = $(`<div id="html_c6da74fcb4105240b0710fdf9176634b" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_363d137c51a8602514923ee277d6561b.setContent(html_c6da74fcb4105240b0710fdf9176634b);
+            
+        
+
+        circle_4bb1e03ead7dacad7e38e5306cf88e6f.bindPopup(popup_363d137c51a8602514923ee277d6561b)
+        ;
+
+        
+    
+    
+            var marker_578324a9f1235d94352d87c66d319858 = L.marker(
+                [40.699852, -73.908006],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_76ac99b4fb87a51fe4efe81abbfb63dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_578324a9f1235d94352d87c66d319858.setIcon(icon_76ac99b4fb87a51fe4efe81abbfb63dd);
+        
+    
+        var popup_42237ef9815b2050723f9e7ef85f3818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_feeb15ba6ed6e7ba1e1c6cb97bfe68c7 = $(`<div id="html_feeb15ba6ed6e7ba1e1c6cb97bfe68c7" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.69985, -73.90801)</div>`)[0];
+                popup_42237ef9815b2050723f9e7ef85f3818.setContent(html_feeb15ba6ed6e7ba1e1c6cb97bfe68c7);
+            
+        
+
+        marker_578324a9f1235d94352d87c66d319858.bindPopup(popup_42237ef9815b2050723f9e7ef85f3818)
+        ;
+
+        
+    
+    
+            var circle_0de3847d78728dcf9771d77ac2c0b8a8 = L.circle(
+                [40.699852, -73.908006],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_454df8fa8ee8dd2ac7d894b20bf30c66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7860e8217a460ca44605904914aa804 = $(`<div id="html_e7860e8217a460ca44605904914aa804" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_454df8fa8ee8dd2ac7d894b20bf30c66.setContent(html_e7860e8217a460ca44605904914aa804);
+            
+        
+
+        circle_0de3847d78728dcf9771d77ac2c0b8a8.bindPopup(popup_454df8fa8ee8dd2ac7d894b20bf30c66)
+        ;
+
+        
+    
+    
+            var marker_6e3fbbd3a2dbcf0834633b4b97422dc0 = L.marker(
+                [40.700341, -73.897077],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_99881be475e32f0585a1d0c146042e55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6e3fbbd3a2dbcf0834633b4b97422dc0.setIcon(icon_99881be475e32f0585a1d0c146042e55);
+        
+    
+        var popup_879c7f01bd102e20ae4d59906b332d57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_203a2f393e16d4dbd19ba8c47f92df52 = $(`<div id="html_203a2f393e16d4dbd19ba8c47f92df52" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.70034, -73.89708)</div>`)[0];
+                popup_879c7f01bd102e20ae4d59906b332d57.setContent(html_203a2f393e16d4dbd19ba8c47f92df52);
+            
+        
+
+        marker_6e3fbbd3a2dbcf0834633b4b97422dc0.bindPopup(popup_879c7f01bd102e20ae4d59906b332d57)
+        ;
+
+        
+    
+    
+            var circle_ffcb067b61de9992e9ca0c39056fd6f1 = L.circle(
+                [40.700341, -73.897077],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_82de470d8e492a29553160c184d2d2f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86ae366d8850aa773f6d63b09c021165 = $(`<div id="html_86ae366d8850aa773f6d63b09c021165" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_82de470d8e492a29553160c184d2d2f2.setContent(html_86ae366d8850aa773f6d63b09c021165);
+            
+        
+
+        circle_ffcb067b61de9992e9ca0c39056fd6f1.bindPopup(popup_82de470d8e492a29553160c184d2d2f2)
+        ;
+
+        
+    
+    
+            var marker_020bfb0d0e6df79a368f69184f1eb083 = L.marker(
+                [40.703717, -73.895707],
+                {
+}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+            var icon_ca9c4d47be58bc6f2e98a8e154e50860 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_020bfb0d0e6df79a368f69184f1eb083.setIcon(icon_ca9c4d47be58bc6f2e98a8e154e50860);
+        
+    
+        var popup_aedce7983faf348d8f4d29e7c597f018 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53541807b333a48d0ad673438d4f7beb = $(`<div id="html_53541807b333a48d0ad673438d4f7beb" style="width: 100.0%; height: 100.0%;"><b>Bus Stop</b><br>Total Crashes: 0<br>Coordinates: (40.70372, -73.89571)</div>`)[0];
+                popup_aedce7983faf348d8f4d29e7c597f018.setContent(html_53541807b333a48d0ad673438d4f7beb);
+            
+        
+
+        marker_020bfb0d0e6df79a368f69184f1eb083.bindPopup(popup_aedce7983faf348d8f4d29e7c597f018)
+        ;
+
+        
+    
+    
+            var circle_90a1eabcf9f226a8b696a05e7256032b = L.circle(
+                [40.703717, -73.895707],
+                {"bubblingMouseEvents": true, "color": "#3186cc", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3186cc", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.48, "stroke": true, "weight": 3}
+            ).addTo(map_a7f3441a7c1d5be335bf4aec4eb6fff5);
+        
+    
+        var popup_56ee31402214e986992abe919bfad064 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d3d033ae38ef847d46a3028ffc3d1fb = $(`<div id="html_8d3d033ae38ef847d46a3028ffc3d1fb" style="width: 100.0%; height: 100.0%;">100ft Radius</div>`)[0];
+                popup_56ee31402214e986992abe919bfad064.setContent(html_8d3d033ae38ef847d46a3028ffc3d1fb);
+            
+        
+
+        circle_90a1eabcf9f226a8b696a05e7256032b.bindPopup(popup_56ee31402214e986992abe919bfad064)
+        ;
+
+        
+    
+</script>
+</html>

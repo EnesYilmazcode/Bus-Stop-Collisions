@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d39b7e03a5aee983892b8e800f30e40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d39b7e03a5aee983892b8e800f30e40" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d39b7e03a5aee983892b8e800f30e40 = L.map(
+                "map_6d39b7e03a5aee983892b8e800f30e40",
+                {
+                    center: [40.7340831, -73.9448068],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d626cff59a54c9260d95f254d6ff918f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d626cff59a54c9260d95f254d6ff918f.addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var marker_1da5bf8e143d476b87553023e6195868 = L.marker(
+                [40.675888, -73.896655],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_25b0122d54d1892d61a76c22e62677bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1da5bf8e143d476b87553023e6195868.setIcon(icon_25b0122d54d1892d61a76c22e62677bb);
+        
+    
+        var popup_55eaff1f2d1ae4b4d71c3ef41f9bff30 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7407c6e39a44060d2bb5dd7121453c9a = $(`<div id="html_7407c6e39a44060d2bb5dd7121453c9a" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 148<br>Crashes: 1037.0</div>`)[0];
+                popup_55eaff1f2d1ae4b4d71c3ef41f9bff30.setContent(html_7407c6e39a44060d2bb5dd7121453c9a);
+            
+        
+
+        marker_1da5bf8e143d476b87553023e6195868.bindPopup(popup_55eaff1f2d1ae4b4d71c3ef41f9bff30)
+        ;
+
+        
+    
+    
+            var marker_c8305d6ba5cb5526461d3ed05297abc9 = L.marker(
+                [40.848314, -73.930898],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_d08e03636665fecd51d49e238ee4f0eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8305d6ba5cb5526461d3ed05297abc9.setIcon(icon_d08e03636665fecd51d49e238ee4f0eb);
+        
+    
+        var popup_8eebc0f2e164533eaa5f8ba297a72288 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_73d2ddb31a648b8966f349f934e5d275 = $(`<div id="html_73d2ddb31a648b8966f349f934e5d275" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 2008<br>Crashes: 647.0</div>`)[0];
+                popup_8eebc0f2e164533eaa5f8ba297a72288.setContent(html_73d2ddb31a648b8966f349f934e5d275);
+            
+        
+
+        marker_c8305d6ba5cb5526461d3ed05297abc9.bindPopup(popup_8eebc0f2e164533eaa5f8ba297a72288)
+        ;
+
+        
+    
+    
+            var marker_77689382125d785edc41f3a03a0c576b = L.marker(
+                [40.848328, -73.93059],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_84143c7d9cdd18525e6a9680ccd6b592 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_77689382125d785edc41f3a03a0c576b.setIcon(icon_84143c7d9cdd18525e6a9680ccd6b592);
+        
+    
+        var popup_4e8186458935a9c6a4fc9eab75cf9873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ffc5121d4aa21bb4496095c8191f727 = $(`<div id="html_3ffc5121d4aa21bb4496095c8191f727" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 1788<br>Crashes: 639.0</div>`)[0];
+                popup_4e8186458935a9c6a4fc9eab75cf9873.setContent(html_3ffc5121d4aa21bb4496095c8191f727);
+            
+        
+
+        marker_77689382125d785edc41f3a03a0c576b.bindPopup(popup_4e8186458935a9c6a4fc9eab75cf9873)
+        ;
+
+        
+    
+    
+            var marker_9220aa6c36837d2b7f12c1c231ef5a4c = L.marker(
+                [40.680445, -73.844838],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_b67a429a3363acf77f4c2f9ead5fbc2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9220aa6c36837d2b7f12c1c231ef5a4c.setIcon(icon_b67a429a3363acf77f4c2f9ead5fbc2b);
+        
+    
+        var popup_9f24a701b023426cd63512f5e15d0fe3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8be0a496f4aa06e97f04dfe7c6d29c75 = $(`<div id="html_8be0a496f4aa06e97f04dfe7c6d29c75" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 2663<br>Crashes: 630.0</div>`)[0];
+                popup_9f24a701b023426cd63512f5e15d0fe3.setContent(html_8be0a496f4aa06e97f04dfe7c6d29c75);
+            
+        
+
+        marker_9220aa6c36837d2b7f12c1c231ef5a4c.bindPopup(popup_9f24a701b023426cd63512f5e15d0fe3)
+        ;
+
+        
+    
+    
+            var marker_21e76f1b2b5366b350991b9fc4e4e225 = L.marker(
+                [40.680467, -73.844455],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_e272d1083484c8e11061a62efde85da8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_21e76f1b2b5366b350991b9fc4e4e225.setIcon(icon_e272d1083484c8e11061a62efde85da8);
+        
+    
+        var popup_bbe4c0d6f61f67885ba8701bebbde673 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d4d19ed36a1e56597c241582b913c86 = $(`<div id="html_6d4d19ed36a1e56597c241582b913c86" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 3059<br>Crashes: 615.0</div>`)[0];
+                popup_bbe4c0d6f61f67885ba8701bebbde673.setContent(html_6d4d19ed36a1e56597c241582b913c86);
+            
+        
+
+        marker_21e76f1b2b5366b350991b9fc4e4e225.bindPopup(popup_bbe4c0d6f61f67885ba8701bebbde673)
+        ;
+
+        
+    
+    
+            var marker_5694d9b63aee599ad6fdffdb5f4ace66 = L.marker(
+                [40.759155, -73.965593],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_d70c65b631f99d044c62ad0bf8d4f230 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5694d9b63aee599ad6fdffdb5f4ace66.setIcon(icon_d70c65b631f99d044c62ad0bf8d4f230);
+        
+    
+        var popup_75307b1f2d3fe5a11d7345db596039e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58c24fa5b996f952e320eeb37b1e9122 = $(`<div id="html_58c24fa5b996f952e320eeb37b1e9122" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 1604<br>Crashes: 611.0</div>`)[0];
+                popup_75307b1f2d3fe5a11d7345db596039e6.setContent(html_58c24fa5b996f952e320eeb37b1e9122);
+            
+        
+
+        marker_5694d9b63aee599ad6fdffdb5f4ace66.bindPopup(popup_75307b1f2d3fe5a11d7345db596039e6)
+        ;
+
+        
+    
+    
+            var marker_a825b5a39227824e6e48b44016a8f809 = L.marker(
+                [40.759521, -73.965533],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_2e7a4f8449db7c3d69833f6ed63dc17a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a825b5a39227824e6e48b44016a8f809.setIcon(icon_2e7a4f8449db7c3d69833f6ed63dc17a);
+        
+    
+        var popup_c38517c0c275ad096cca16c34a23d11b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a21db0d53407dc95d2523c7808ebaf46 = $(`<div id="html_a21db0d53407dc95d2523c7808ebaf46" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 1618<br>Crashes: 605.0</div>`)[0];
+                popup_c38517c0c275ad096cca16c34a23d11b.setContent(html_a21db0d53407dc95d2523c7808ebaf46);
+            
+        
+
+        marker_a825b5a39227824e6e48b44016a8f809.bindPopup(popup_c38517c0c275ad096cca16c34a23d11b)
+        ;
+
+        
+    
+    
+            var marker_9e319eb4a510ce895b1f7c0849fd9270 = L.marker(
+                [40.758213, -73.992386],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_b57e3243059340aa18ff286512111f15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9e319eb4a510ce895b1f7c0849fd9270.setIcon(icon_b57e3243059340aa18ff286512111f15);
+        
+    
+        var popup_6da31d82c76cca29b3cf16afdec8e988 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2928f41da30b9cd0cd72807959f9460f = $(`<div id="html_2928f41da30b9cd0cd72807959f9460f" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 1586<br>Crashes: 592.0</div>`)[0];
+                popup_6da31d82c76cca29b3cf16afdec8e988.setContent(html_2928f41da30b9cd0cd72807959f9460f);
+            
+        
+
+        marker_9e319eb4a510ce895b1f7c0849fd9270.bindPopup(popup_6da31d82c76cca29b3cf16afdec8e988)
+        ;
+
+        
+    
+    
+            var marker_d305ec674b857359061384e84ca896c0 = L.marker(
+                [40.760088, -73.96763],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_229e9f5a0aed4a24313c95e6bd1b9c0b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d305ec674b857359061384e84ca896c0.setIcon(icon_229e9f5a0aed4a24313c95e6bd1b9c0b);
+        
+    
+        var popup_0d4448570d873740c03b9b2a866a23eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4e8b082c2da6687191e88efd72658d5 = $(`<div id="html_f4e8b082c2da6687191e88efd72658d5" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 1927<br>Crashes: 579.0</div>`)[0];
+                popup_0d4448570d873740c03b9b2a866a23eb.setContent(html_f4e8b082c2da6687191e88efd72658d5);
+            
+        
+
+        marker_d305ec674b857359061384e84ca896c0.bindPopup(popup_0d4448570d873740c03b9b2a866a23eb)
+        ;
+
+        
+    
+    
+            var marker_8fb1426ad4b753a9f8950fdda84ee3ad = L.marker(
+                [40.570412, -74.10949],
+                {
+}
+            ).addTo(map_6d39b7e03a5aee983892b8e800f30e40);
+        
+    
+            var icon_e7d15f650bbc5d6ab8463bf151aac277 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8fb1426ad4b753a9f8950fdda84ee3ad.setIcon(icon_e7d15f650bbc5d6ab8463bf151aac277);
+        
+    
+        var popup_8e5b1ba960105b1c4e39ef71e678c731 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c923455ce00fc8a04bd4f75b1d2aeb3 = $(`<div id="html_9c923455ce00fc8a04bd4f75b1d2aeb3" style="width: 100.0%; height: 100.0%;">Bus Stop ID: 3183<br>Crashes: 501.0</div>`)[0];
+                popup_8e5b1ba960105b1c4e39ef71e678c731.setContent(html_9c923455ce00fc8a04bd4f75b1d2aeb3);
+            
+        
+
+        marker_8fb1426ad4b753a9f8950fdda84ee3ad.bindPopup(popup_8e5b1ba960105b1c4e39ef71e678c731)
+        ;
+
+        
+    
+</script>
+</html>
